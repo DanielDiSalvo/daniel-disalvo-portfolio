@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header/Header";
 import Hero from "@/components/sections/Hero/Hero";
+import TechOverview from "@/components/sections/TechOverview/TechOverview";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
 
       <main>
         <Hero />
+        <TechOverview />
       </main>
     </>
   );
