@@ -2,6 +2,7 @@ import Header from "@/components/layout/Header/Header";
 import Hero from "@/components/sections/Hero/Hero";
 import TechOverview from "@/components/sections/TechOverview/TechOverview";
 import SelectedProjects from "@/components/sections/SelectedProjects/SelectedProjects";
+import Experience from "@/components/sections/Experience/Experience";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <TechOverview />
         <SelectedProjects />
+        <Experience />
       </main>
     </>
   );
