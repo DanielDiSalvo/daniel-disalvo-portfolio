@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navigation = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
@@ -12,7 +14,14 @@ const Header = () => {
     <header className="border-b border-border">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <a href="#" className="flex items-center gap-3 font-semibold">
-          <span className="text-xl font-bold">DD</span>
+          <Image
+            src="/daniel-di-salvo.jpg"
+            alt="Daniel Di Salvo"
+            width={40}
+            height={40}
+            priority
+            className="h-10 w-10 rounded-full border border-border object-cover"
+          />
           <span>Daniel Di Salvo</span>
         </a>
 
