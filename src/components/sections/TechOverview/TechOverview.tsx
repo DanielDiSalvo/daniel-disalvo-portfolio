@@ -2,7 +2,7 @@ import { stats, technologies } from "./data";
 
 const TechOverview = () => {
   return (
-    <section className="border-y border-border">
+    <section id="stack" className="border-y border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4">
           {stats.map(({ value, label }) => (
