@@ -1,3 +1,5 @@
+import Button from "@/components/ui/Button/Button";
+
 const Hero = () => {
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
@@ -27,26 +29,15 @@ const Hero = () => {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <a
-              href="#projects"
-              className="rounded-lg bg-foreground px-6 py-3 text-center text-sm font-medium text-background transition-opacity hover:opacity-80"
-            >
-              View my work →
-            </a>
+            <Button href="#projects">View my work →</Button>
 
-            <a
-              href="#contact"
-              className="rounded-lg border border-border px-6 py-3 text-center text-sm font-medium transition-colors hover:bg-white/5"
-            >
+            <Button href="#contact" variant="secondary">
               Get in touch
-            </a>
+            </Button>
 
-            <a
-              href="#"
-              className="rounded-lg bg-accent px-6 py-3 text-center text-sm font-medium text-white transition-opacity hover:opacity-85"
-            >
+            <Button href="#" variant="accent">
               Download CV ↓
-            </a>
+            </Button>
           </div>
         </div>
 
