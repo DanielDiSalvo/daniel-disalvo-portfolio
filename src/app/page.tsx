@@ -4,6 +4,7 @@ import TechOverview from "@/components/sections/TechOverview/TechOverview";
 import SelectedProjects from "@/components/sections/SelectedProjects/SelectedProjects";
 import Experience from "@/components/sections/Experience/Experience";
 import About from "@/components/sections/About/About";
+import Teaching from "@/components/sections/Teaching/Teaching";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <SelectedProjects />
         <Experience />
+        <Teaching />
       </main>
     </>
   );
