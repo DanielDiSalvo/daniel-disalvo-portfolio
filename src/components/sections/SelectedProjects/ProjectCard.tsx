@@ -1,5 +1,5 @@
 import type { Project } from "./types";
-
+import ProjectStatus from "@/components/ui/ProjectStatus/ProjectStatus";
 type ProjectCardProps = {
   project: Project;
   index: number;
@@ -16,9 +16,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           {String(index + 1).padStart(2, "0")}
         </span>
 
-        <span className="rounded-full border border-border px-3 py-1 text-xs text-muted">
-          {status}
-        </span>
+        <ProjectStatus status={status} />
       </div>
 
       <p className="mt-10 text-xs font-medium tracking-[0.18em] text-muted">
