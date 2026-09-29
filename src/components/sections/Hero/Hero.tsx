@@ -1,27 +1,27 @@
+import { getTranslations } from "next-intl/server";
+
 import Button from "@/components/ui/Button/Button";
 
-const Hero = () => {
-  return (
-    <section className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
-      <div className="grid min-w-0 items-center gap-16 lg:grid-cols-2">
-        <div className="min-w-0">
-          <div className="mb-6 flex items-center gap-3">
-            <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-400" />
+const Hero = async () => {
+  const t = await getTranslations("Hero");
 
-            <span className="text-xs font-medium tracking-[0.18em] text-muted">
-              SENIOR FRONTEND ENGINEER
-            </span>
+  return (
+    <section className="mx-auto max-w-7xl px-6 py-20 sm:py-24 lg:py-32">
+      <div className="grid min-w-0 items-center gap-16 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="min-w-0">
+          <div className="flex items-center gap-3">
+            <span className="h-2 w-2 rounded-full bg-emerald-400" />
+
+            <p className="text-xs font-medium tracking-[0.25em] text-muted">
+              {t("role")}
+            </p>
           </div>
 
-          <h1 className="max-w-xl text-5xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-            Building scalable
-            <br />
-            web & mobile
-            <br />
-            <span className="text-accent">products.</span>
+          <h1 className="mt-8 max-w-[760px] text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl">
+            {t("title")} <span className="text-accent">{t("titleAccent")}</span>
           </h1>
 
-          <p className="mt-7 max-w-xl text-base leading-7 text-muted md:text-lg">
+          <p className="mt-8 max-w-xl text-lg leading-8 text-muted">
             Frontend engineer with 9+ years of experience creating web and
             mobile products. I work with React, React Native, Next.js and
             TypeScript, turning ideas into real solutions with a focus on
@@ -41,16 +41,18 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="min-w-0 overflow-hidden rounded-xl border border-border bg-white/[0.02] font-mono">
-          <div className="flex items-center gap-2 border-b border-border px-5 py-4">
-            <span className="h-3 w-3 shrink-0 rounded-full bg-red-400" />
-            <span className="h-3 w-3 shrink-0 rounded-full bg-yellow-400" />
-            <span className="h-3 w-3 shrink-0 rounded-full bg-green-400" />
+        <div className="min-w-0 overflow-hidden rounded-xl border border-border">
+          <div className="flex items-center gap-2 border-b border-border px-6 py-4">
+            <span className="h-3 w-3 rounded-full bg-red-400" />
+            <span className="h-3 w-3 rounded-full bg-yellow-400" />
+            <span className="h-3 w-3 rounded-full bg-emerald-400" />
 
-            <span className="ml-3 text-xs text-muted">~/portfolio</span>
+            <span className="ml-4 font-mono text-sm text-muted">
+              ~/portfolio
+            </span>
           </div>
 
-          <div className="overflow-x-auto p-6 text-sm leading-7">
+          <div className="overflow-x-auto p-6 font-mono text-sm leading-7 sm:p-8">
             <pre>
               <code>
                 <span className="text-fuchsia-400">const</span>{" "}
@@ -82,8 +84,9 @@ const Hero = () => {
                 {"  "}location:{" "}
                 <span className="text-emerald-400">&quot;Argentina&quot;</span>,
                 {"\n"}
-                {"}"};{"\n\n"}
-                <span className="text-muted">// Always learning...</span>
+                {"};"}
+                {"\n\n"}
+                <span className="text-muted">{"// Always learning..."}</span>
               </code>
             </pre>
           </div>
