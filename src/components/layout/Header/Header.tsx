@@ -1,13 +1,20 @@
 import Image from "next/image";
+import { getLocale } from "next-intl/server";
 
+import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
 import { navigation } from "./data";
 
-const Header = () => {
+const Header = async () => {
+  const locale = await getLocale();
+
   return (
     <header className="relative border-b border-border">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <a href="#" className="flex items-center gap-3 font-semibold">
+        <a
+          href={`/${locale}`}
+          className="flex items-center gap-3 font-semibold"
+        >
           <Image
             src="/daniel-di-salvo.jpg"
             alt="Daniel Di Salvo"
@@ -36,14 +43,7 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-3">
-          <div className="hidden items-center gap-1 rounded-full border border-border p-1 text-xs md:flex">
-            <button className="rounded-full bg-foreground px-3 py-1 text-background">
-              EN
-            </button>
-
-            <button className="px-3 py-1 text-muted">ES</button>
-          </div>
-
+          <LanguageSwitcher />
           <MobileMenu />
         </div>
       </div>
