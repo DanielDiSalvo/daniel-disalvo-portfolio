@@ -1,4 +1,7 @@
-const Footer = () => {
+import { getTranslations } from "next-intl/server";
+
+const Footer = async () => {
+  const t = await getTranslations("Footer");
   const currentYear = new Date().getFullYear();
 
   return (
@@ -13,7 +16,7 @@ const Footer = () => {
         <div className="text-sm text-muted sm:text-right">
           <p>© {currentYear} Daniel Di Salvo</p>
 
-          <p className="mt-1">Built with Next.js & TypeScript</p>
+          <p className="mt-1">{t("builtWith")}</p>
         </div>
       </div>
     </footer>

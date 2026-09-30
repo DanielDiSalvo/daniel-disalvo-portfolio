@@ -1,14 +1,12 @@
 export const teachingHighlights = [
   {
+    key: "rating",
     value: "4.8",
-    label: "Instructor rating",
   },
   {
-    value: "Frontend",
-    label: "JavaScript & React",
+    key: "frontend",
   },
   {
-    value: "Mentoring",
-    label: "Code reviews & guidance",
+    key: "mentoring",
   },
-];
+] as const;

@@ -1,7 +1,185 @@
 {
+  "Header": {
+    "navigation": {
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Projects",
+      "stack": "Stack",
+      "teaching": "Teaching",
+      "contact": "Contact"
+    }
+  },
   "Hero": {
     "role": "SENIOR FRONTEND ENGINEER",
     "title": "Building scalable web & mobile",
-    "titleAccent": "products."
+    "titleAccent": "products.",
+    "description": "Frontend engineer with 9+ years of experience creating web and mobile products. I work with React, React Native, Next.js and TypeScript, turning ideas into real solutions with a focus on performance, scalability and great user experiences.",
+    "viewWork": "View my work →",
+    "getInTouch": "Get in touch",
+    "downloadCv": "Download CV ↓"
+  },
+  "About": {
+    "label": "ABOUT",
+    "title": "Engineering with a",
+    "titleAccent": "product mindset.",
+    "paragraph1": "I'm a software engineer with 9+ years of experience building web and mobile products, primarily across the React ecosystem.",
+    "paragraph2": "My work goes beyond implementing interfaces. I care about architecture, maintainability, performance and understanding the product problems behind the code.",
+    "paragraph3": "Alongside engineering, teaching has become an important part of my career, strengthening the way I communicate technical decisions, mentor developers and approach complex problems.",
+    "expertise": {
+      "frontend": {
+        "title": "Frontend Engineering",
+        "description": "Scalable interfaces and product experiences built with modern React ecosystems."
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "description": "Cross-platform mobile products with React Native and production-oriented architecture."
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "APIs and backend services with Node.js, NestJS and relational databases."
+      },
+      "teaching": {
+        "title": "Teaching & Mentoring",
+        "description": "Helping developers understand not only how to build software, but why."
+      }
+    }
+  },
+  "Projects": {
+    "label": "SELECTED PROJECTS",
+    "title": "Building beyond",
+    "titleSecondLine": "the interface.",
+    "description": "A selection of products and engineering projects focused on modern frontend, mobile and backend architecture.",
+    "items": {
+      "mobile": {
+        "category": "MOBILE ENGINEERING",
+        "title": "Mobile Product",
+        "description": "Production-style mobile application focused on scalable architecture, API integration and a polished cross-platform experience.",
+        "highlights": [
+          "Cross-platform architecture",
+          "Server & client state management",
+          "API integration"
+        ]
+      },
+      "fullStack": {
+        "category": "FULL-STACK DEVELOPMENT",
+        "title": "Full-stack Web Platform",
+        "description": "Modern web platform built around the latest React and Next.js architecture, combining server and client capabilities.",
+        "highlights": [
+          "Server & Client Components",
+          "Server Actions",
+          "Performance & accessibility"
+        ]
+      },
+      "backend": {
+        "category": "BACKEND ENGINEERING",
+        "title": "Backend Platform API",
+        "description": "Scalable backend platform designed around a modular architecture, relational data and production-oriented API practices.",
+        "highlights": [
+          "REST API architecture",
+          "Authentication & validation",
+          "Database modeling"
+        ]
+      },
+      "client": {
+        "category": "FRONTEND ARCHITECTURE",
+        "title": "Complex Client Application",
+        "description": "Feature-rich React application designed to explore complex client-side state, predictable data flows and robust testing.",
+        "highlights": [
+          "Complex state management",
+          "Component architecture",
+          "Automated testing"
+        ]
+      }
+    },
+    "status": {
+      "planned": "Planned",
+      "in-progress": "In progress",
+      "completed": "Completed"
+    }
+  },
+  "Experience": {
+    "label": "EXPERIENCE",
+    "title": "Engineering products",
+    "titleSecondLine": "for real-world environments.",
+    "description": "Building and teaching software across web, mobile and backend environments, with a focus on scalable architecture and maintainable products.",
+    "items": {
+      "cda": {
+        "role": "Software Engineer",
+        "period": "2026 — PRESENT",
+        "description": "Building mobile applications and backend services for a large-scale financial services environment.",
+        "highlights": [
+          "Cross-platform mobile development",
+          "Backend services and API development",
+          "Production-oriented engineering workflows"
+        ]
+      },
+      "globallogic": {
+        "role": "Senior Software Engineer",
+        "period": "2020 — 2026",
+        "description": "Built and maintained web and mobile products for large international clients across media, telecommunications and digital platforms.",
+        "highlights": [
+          "Reusable frontend and mobile architectures",
+          "Automated testing and component documentation",
+          "Code reviews, mentoring and engineering collaboration"
+        ]
+      },
+      "coderhouse": {
+        "role": "Programming Instructor",
+        "period": "2020 — PRESENT",
+        "description": "Teaching frontend development and mentoring students through practical software development projects.",
+        "highlights": [
+          "Frontend development education",
+          "Technical mentoring",
+          "Project reviews and developer guidance"
+        ]
+      }
+    }
+  },
+  "Teaching": {
+    "label": "TEACHING",
+    "title": "Building software.",
+    "titleAccent": "Sharing knowledge.",
+    "paragraph1": "Teaching programming has become an important part of my professional journey alongside software engineering.",
+    "paragraph2": "As a frontend instructor, I help developers understand JavaScript, React and modern development workflows through practical projects, technical guidance and code reviews.",
+    "paragraph3": "Teaching also influences the way I work as an engineer: communicating decisions clearly, breaking down complex problems and helping teams grow.",
+    "highlights": {
+      "rating": {
+        "value": "4.8",
+        "label": "Instructor rating"
+      },
+      "frontend": {
+        "value": "Frontend",
+        "label": "JavaScript & React"
+      },
+      "mentoring": {
+        "value": "Mentoring",
+        "label": "Code reviews & guidance"
+      }
+    }
+  },
+  "Contact": {
+    "label": "CONTACT",
+    "title": "Have a project",
+    "titleSecondLine": "in mind?",
+    "titleAccent": "Let's build it.",
+    "description": "I'm always open to discussing interesting products, engineering challenges and opportunities to build great software.",
+    "links": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
+  "TechOverview": {
+    "label": "TECH STACK",
+    "stats": {
+      "software": "Years in software",
+      "react": "Years with React",
+      "nextjs": "Years with Next.js",
+      "products": "Real products"
+    }
+  },
+  "Footer": {
+    "role": "Senior Frontend Engineer",
+    "builtWith": "Built with Next.js & TypeScript"
   }
 }
