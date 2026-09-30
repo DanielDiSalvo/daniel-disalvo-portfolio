@@ -7,7 +7,7 @@ const Hero = async () => {
 
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 sm:py-24 lg:py-32">
-      <div className="grid min-w-0 items-center gap-16 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="grid min-w-0 items-center gap-16 lg:grid-cols-[1.1fr_1fr]">
         <div className="min-w-0">
           <div className="flex items-center gap-3">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
