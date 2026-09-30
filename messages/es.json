@@ -7,7 +7,12 @@
       "stack": "Tecnologías",
       "teaching": "Docencia",
       "contact": "Contacto"
-    }
+    },
+    "mainNavigation": "Navegación principal",
+    "languageSelector": "Selector de idioma",
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación",
+    "mobileNavigation": "Navegación móvil"
   },
   "Hero": {
     "role": "SENIOR FRONTEND ENGINEER",
@@ -181,5 +186,8 @@
   "Footer": {
     "role": "Senior Frontend Engineer",
     "builtWith": "Desarrollado con Next.js & TypeScript"
+  },
+  "BackToTop": {
+    "label": "Volver arriba"
   }
 }

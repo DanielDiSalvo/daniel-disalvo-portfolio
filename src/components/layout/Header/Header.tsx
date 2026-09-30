@@ -29,7 +29,7 @@ const Header = async () => {
         </a>
 
         <nav
-          aria-label="Main navigation"
+          aria-label={t("mainNavigation")}
           className="hidden items-center gap-8 md:flex"
         >
           {navigation.map(({ key, href }) => (

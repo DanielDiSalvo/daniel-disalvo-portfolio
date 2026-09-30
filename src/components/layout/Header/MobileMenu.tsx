@@ -16,7 +16,7 @@ const MobileMenu = () => {
     <div className="md:hidden">
       <button
         type="button"
-        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-label={isOpen ? t("closeMenu") : t("openMenu")}
         aria-expanded={isOpen}
         aria-controls="mobile-navigation"
         onClick={() => setIsOpen((current) => !current)}
@@ -45,7 +45,7 @@ const MobileMenu = () => {
           className="absolute left-0 top-full w-full border-b border-border bg-background"
         >
           <nav
-            aria-label="Mobile navigation"
+            aria-label={t("mobileNavigation")}
             className="mx-auto max-w-7xl px-6 py-6"
           >
             <div className="flex flex-col">
