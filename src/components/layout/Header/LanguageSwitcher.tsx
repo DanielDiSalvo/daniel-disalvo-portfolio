@@ -1,10 +1,11 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 
 const LanguageSwitcher = () => {
   const locale = useLocale();
+  const t = useTranslations("Header");
   const pathname = usePathname();
   const router = useRouter();
 
@@ -25,7 +26,7 @@ const LanguageSwitcher = () => {
   return (
     <div
       className="hidden items-center gap-1 rounded-full border border-border p-1 text-xs md:flex"
-      aria-label="Language selector"
+      aria-label={t("languageSelector")}
     >
       <button
         type="button"

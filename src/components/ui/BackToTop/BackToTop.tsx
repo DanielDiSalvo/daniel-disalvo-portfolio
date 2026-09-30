@@ -1,8 +1,11 @@
-"use client";
+import { useTranslations } from "next-intl";
+
+("use client");
 
 import { useEffect, useState } from "react";
 
 const BackToTop = () => {
+  const t = useTranslations("BackToTop");
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -30,7 +33,7 @@ const BackToTop = () => {
     <button
       type="button"
       onClick={scrollToTop}
-      aria-label="Back to top"
+      aria-label={t("label")}
       className="fixed bottom-6 right-6 z-50 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background text-lg text-muted shadow-lg transition-all duration-200 hover:-translate-y-1 hover:text-foreground"
     >
       ↑
