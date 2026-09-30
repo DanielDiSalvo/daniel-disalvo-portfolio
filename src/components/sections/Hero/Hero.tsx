@@ -22,21 +22,18 @@ const Hero = async () => {
           </h1>
 
           <p className="mt-8 max-w-xl text-lg leading-8 text-muted">
-            Frontend engineer with 9+ years of experience creating web and
-            mobile products. I work with React, React Native, Next.js and
-            TypeScript, turning ideas into real solutions with a focus on
-            performance, scalability and great user experiences.
+            {t("description")}
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-            <Button href="#projects">View my work →</Button>
+            <Button href="#projects">{t("viewWork")}</Button>
 
             <Button href="#contact" variant="secondary">
-              Get in touch
+              {t("getInTouch")}
             </Button>
 
             <Button href="#" variant="accent">
-              Download CV ↓
+              {t("downloadCv")}
             </Button>
           </div>
         </div>

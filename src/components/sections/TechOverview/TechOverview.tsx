@@ -1,27 +1,30 @@
 import { stats, technologies } from "./data";
+import { getTranslations } from "next-intl/server";
 
-const TechOverview = () => {
+const TechOverview = async () => {
+  const t = await getTranslations("TechOverview");
+
   return (
     <section id="stack" className="border-y border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4">
-          {stats.map(({ value, label }) => (
+          {stats.map(({ key, value }) => (
             <div
-              key={label}
+              key={key}
               className="border-border py-8 even:border-l even:pl-6 lg:border-l lg:px-8 lg:first:border-l-0 lg:first:pl-0"
             >
               <p className="text-2xl font-semibold tracking-tight md:text-3xl">
                 {value}
               </p>
 
-              <p className="mt-2 text-sm text-muted">{label}</p>
+              <p className="mt-2 text-sm text-muted">{t(`stats.${key}`)}</p>
             </div>
           ))}
         </div>
 
         <div className="border-t border-border py-8">
           <p className="mb-6 text-xs font-medium tracking-[0.18em] text-muted">
-            TECH STACK
+            {t("label")}
           </p>
 
           <div className="flex flex-wrap gap-x-8 gap-y-4">

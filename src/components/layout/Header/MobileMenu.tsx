@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-
+import { useTranslations } from "next-intl";
 import { navigation } from "./data";
 
 const MobileMenu = () => {
+  const t = useTranslations("Header");
   const [isOpen, setIsOpen] = useState(false);
 
   const closeMenu = () => {
@@ -48,14 +49,14 @@ const MobileMenu = () => {
             className="mx-auto max-w-7xl px-6 py-6"
           >
             <div className="flex flex-col">
-              {navigation.map(({ label, href }) => (
+              {navigation.map(({ key, href }) => (
                 <a
                   key={href}
                   href={href}
                   onClick={closeMenu}
                   className="border-b border-border py-4 text-sm text-muted transition-colors last:border-b-0 hover:text-foreground"
                 >
-                  {label}
+                  {t(`navigation.${key}`)}
                 </a>
               ))}
             </div>

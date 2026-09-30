@@ -1,12 +1,11 @@
 export type ProjectStatus = "completed" | "in-progress" | "planned";
 
+export type ProjectKey = "mobile" | "fullStack" | "backend" | "client";
+
 export type Project = {
   id: string;
-  title: string;
-  category: string;
-  description: string;
-  technologies: string[];
-  highlights: string[];
+  key: ProjectKey;
+  technologies: readonly string[];
   status: ProjectStatus;
   repository?: string;
   demo?: string;

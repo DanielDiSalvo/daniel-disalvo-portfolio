@@ -1,13 +1,15 @@
 import type { Project } from "./types";
+import { getTranslations } from "next-intl/server";
 import ProjectStatus from "@/components/ui/ProjectStatus/ProjectStatus";
 type ProjectCardProps = {
   project: Project;
   index: number;
 };
 
-const ProjectCard = ({ project, index }: ProjectCardProps) => {
-  const { title, category, description, technologies, highlights, status } =
-    project;
+const ProjectCard = async ({ project, index }: ProjectCardProps) => {
+  const t = await getTranslations("Projects");
+
+  const { key, technologies, status } = project;
 
   return (
     <article className="group flex h-full flex-col border-t border-border py-10">
@@ -20,17 +22,19 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       </div>
 
       <p className="mt-10 text-xs font-medium tracking-[0.18em] text-muted">
-        {category}
+        {t(`items.${key}.category`)}
       </p>
 
       <h3 className="mt-4 text-2xl font-semibold tracking-tight md:text-3xl">
-        {title}
+        {t(`items.${key}.title`)}
       </h3>
 
-      <p className="mt-4 max-w-xl leading-7 text-muted">{description}</p>
+      <p className="mt-4 max-w-xl leading-7 text-muted">
+        {t(`items.${key}.description`)}
+      </p>
 
       <ul className="mt-8 space-y-2 text-sm text-muted">
-        {highlights.map((highlight) => (
+        {t.raw(`items.${key}.highlights`).map((highlight: string) => (
           <li key={highlight} className="flex items-center gap-3">
             <span className="h-1 w-1 rounded-full bg-accent" />
             {highlight}

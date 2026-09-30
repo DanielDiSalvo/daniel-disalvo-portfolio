@@ -1,40 +1,42 @@
 import { contactLinks } from "./data";
+import { getTranslations } from "next-intl/server";
 
-const Contact = () => {
+const Contact = async () => {
+  const t = await getTranslations("Contact");
+
   return (
     <section id="contact" className="border-t border-border">
       <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
         <p className="text-xs font-medium tracking-[0.18em] text-muted">
-          CONTACT
+          {t("label")}
         </p>
 
         <div className="mt-6 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
             <h2 className="max-w-4xl text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-              Have a project
+              {t("title")}
               <br />
-              in mind?
+              {t("titleSecondLine")}
               <br />
-              <span className="text-accent">Let&apos;s build it.</span>
+              <span className="text-accent">{t("titleAccent")}</span>
             </h2>
 
             <p className="mt-8 max-w-xl text-base leading-7 text-muted md:text-lg">
-              I&apos;m always open to discussing interesting products,
-              engineering challenges and opportunities to build great software.
+              {t("description")}
             </p>
           </div>
 
           <div className="border-t border-border">
-            {contactLinks.map(({ label, value, href }) => (
+            {contactLinks.map(({ key, value, href }) => (
               <a
-                key={label}
+                key={key}
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel={href.startsWith("http") ? "noreferrer" : undefined}
                 className="group flex items-center justify-between gap-6 border-b border-border py-5"
               >
                 <div className="min-w-0">
-                  <p className="text-xs text-muted">{label}</p>
+                  <p className="text-xs text-muted">{t(`links.${key}`)}</p>
 
                   <p className="mt-1 truncate text-sm font-medium md:text-base">
                     {value}

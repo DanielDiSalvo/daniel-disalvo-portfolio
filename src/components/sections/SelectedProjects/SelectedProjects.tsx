@@ -1,25 +1,27 @@
 import ProjectCard from "./ProjectCard";
 import { projects } from "./data";
+import { getTranslations } from "next-intl/server";
 
-const SelectedProjects = () => {
+const SelectedProjects = async () => {
+  const t = await getTranslations("Projects");
+
   return (
     <section id="projects" className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
       <div className="mb-16 grid gap-6 lg:grid-cols-2">
         <div>
           <p className="text-xs font-medium tracking-[0.18em] text-muted">
-            SELECTED PROJECTS
+            {t("label")}
           </p>
 
           <h2 className="mt-5 text-4xl font-semibold tracking-tight md:text-5xl">
-            Building beyond
+            {t("title")}
             <br />
-            the interface.
+            {t("titleSecondLine")}
           </h2>
         </div>
 
         <p className="max-w-lg self-end leading-7 text-muted lg:justify-self-end">
-          A selection of products and engineering projects focused on modern
-          frontend, mobile and backend architecture.
+          {t("description")}
         </p>
       </div>
 

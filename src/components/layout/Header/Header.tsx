@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
@@ -7,6 +7,7 @@ import { navigation } from "./data";
 
 const Header = async () => {
   const locale = await getLocale();
+  const t = await getTranslations("Header");
 
   return (
     <header className="relative border-b border-border">
@@ -31,13 +32,13 @@ const Header = async () => {
           aria-label="Main navigation"
           className="hidden items-center gap-8 md:flex"
         >
-          {navigation.map(({ label, href }) => (
+          {navigation.map(({ key, href }) => (
             <a
               key={href}
               href={href}
               className="text-sm text-muted transition-colors hover:text-foreground"
             >
-              {label}
+              {t(`navigation.${key}`)}
             </a>
           ))}
         </nav>

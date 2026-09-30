@@ -1,9 +1,8 @@
+export type ExperienceKey = "cda" | "globallogic" | "coderhouse";
+
 export type Experience = {
   id: string;
+  key: ExperienceKey;
   company: string;
-  role: string;
-  period: string;
-  description: string;
   technologies: string[];
-  highlights?: string[];
 };

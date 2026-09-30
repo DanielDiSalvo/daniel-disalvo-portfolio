@@ -1,21 +1,21 @@
 export const stats = [
   {
+    key: "software",
     value: "9+",
-    label: "Years in software",
   },
   {
+    key: "react",
     value: "8+",
-    label: "Years with React",
   },
   {
+    key: "nextjs",
     value: "5+",
-    label: "Years with Next.js",
   },
   {
+    key: "products",
     value: "Web + Mobile",
-    label: "Real products",
   },
-];
+] as const;
 
 export const technologies = [
   "React",
