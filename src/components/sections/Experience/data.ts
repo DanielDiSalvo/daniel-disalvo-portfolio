@@ -21,6 +21,19 @@ export const experiences: Experience[] = [
     ],
   },
   {
+    id: "globant",
+    key: "globant",
+    company: "Globant",
+    technologies: [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Testing",
+      "Accessibility",
+    ],
+  },
+  {
     id: "coderhouse",
     key: "coderhouse",
     company: "Coderhouse",

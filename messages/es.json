@@ -128,6 +128,16 @@
           "Code reviews, mentoría y colaboración técnica"
         ]
       },
+      "globant": {
+        "role": "Semi-Senior Software Engineer",
+        "period": "Nov 2017 — Oct 2020",
+        "description": "Desarrollé aplicaciones React para clientes de Estados Unidos, creando interfaces adaptables y contribuyendo a iniciativas de accesibilidad, testing automatizado y QA.",
+        "highlights": [
+          "Desarrollé aplicaciones React adaptables utilizando componentes de clase y Hooks.",
+          "Mejoré la accesibilidad mediante HTML semántico y validación con lectores de pantalla.",
+          "Contribuí a pruebas unitarias y E2E, automatización de QA y demostraciones para clientes."
+        ]
+      },
       "coderhouse": {
         "role": "Profesor de Programación",
         "period": "2020 — ACTUALIDAD",
