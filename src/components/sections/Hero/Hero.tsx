@@ -1,9 +1,14 @@
-import { getTranslations } from "next-intl/server";
-
+import { getLocale, getTranslations } from "next-intl/server";
 import Button from "@/components/ui/Button/Button";
 
 const Hero = async () => {
+  const locale = await getLocale();
   const t = await getTranslations("Hero");
+
+  const cvHref =
+    locale === "es"
+      ? "/Daniel_Di_Salvo_Senior_Frontend_Engineer_ES.pdf"
+      : "/Daniel_Di_Salvo_Senior_Frontend_Engineer_EN.pdf";
 
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 sm:py-24 lg:py-32">
@@ -32,7 +37,7 @@ const Hero = async () => {
               {t("getInTouch")}
             </Button>
 
-            <Button href="#" variant="accent">
+            <Button href={cvHref} variant="accent" download>
               {t("downloadCv")}
             </Button>
           </div>
