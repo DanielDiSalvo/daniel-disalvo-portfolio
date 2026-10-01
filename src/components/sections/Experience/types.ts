@@ -1,4 +1,4 @@
-export type ExperienceKey = "cda" | "globallogic" | "coderhouse";
+export type ExperienceKey = "cda" | "globallogic" | "coderhouse" | "globant";
 
 export type Experience = {
   id: string;

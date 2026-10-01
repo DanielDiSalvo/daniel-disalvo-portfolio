@@ -110,7 +110,7 @@
     "items": {
       "cda": {
         "role": "Software Engineer",
-        "period": "2026 — PRESENT",
+        "period": "Aug 2026 — Present",
         "description": "Building mobile applications and backend services for a large-scale financial services environment.",
         "highlights": [
           "Cross-platform mobile development",
@@ -120,7 +120,7 @@
       },
       "globallogic": {
         "role": "Senior Software Engineer",
-        "period": "2020 — 2026",
+        "period": "Oct 2020 — Jun 2026",
         "description": "Built and maintained web and mobile products for large international clients across media, telecommunications and digital platforms.",
         "highlights": [
           "Reusable frontend and mobile architectures",
@@ -128,9 +128,19 @@
           "Code reviews, mentoring and engineering collaboration"
         ]
       },
+      "globant": {
+        "role": "Semi-Senior Software Engineer",
+        "period": "Nov 2017 — Oct 2020",
+        "description": "Developed React applications for U.S. clients, building responsive interfaces and contributing to accessibility, automated testing and QA initiatives.",
+        "highlights": [
+          "Built responsive React applications with class components and Hooks.",
+          "Improved accessibility using semantic HTML and screen-reader validation.",
+          "Contributed to unit and end-to-end testing, QA automation and client demos."
+        ]
+      },
       "coderhouse": {
         "role": "Programming Instructor",
-        "period": "2020 — PRESENT",
+        "period": "Feb 2021 — Present",
         "description": "Teaching frontend development and mentoring students through practical software development projects.",
         "highlights": [
           "Frontend development education",
