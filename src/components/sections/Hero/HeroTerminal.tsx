@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const terminalLines = [
+const desktopTerminalLines = [
   "const dany = {",
   '  role: "Senior Frontend Engineer",',
   '  stack: ["React", "React Native", "Next.js", "TypeScript"],',
@@ -14,15 +14,35 @@ const terminalLines = [
   "// Always learning...",
 ];
 
-const terminalContent = terminalLines.join("\n");
+const mobileTerminalLines = [
+  "const dany = {",
+  '  role: "Senior Frontend Engineer",',
+  "  stack: [",
+  '    "React",',
+  '    "React Native",',
+  '    "Next.js",',
+  '    "TypeScript",',
+  "  ],",
+  '  focus: "Web + Mobile products",',
+  '  passion: "Teaching & building",',
+  '  location: "Argentina",',
+  "};",
+  "",
+  "// Always learning...",
+];
+
+const desktopContent = desktopTerminalLines.join("\n");
+const mobileContent = mobileTerminalLines.join("\n");
 
 const HeroTerminal = () => {
   const [visibleCharacters, setVisibleCharacters] = useState(0);
 
+  const maxCharacters = Math.max(desktopContent.length, mobileContent.length);
+
   useEffect(() => {
     const interval = window.setInterval(() => {
       setVisibleCharacters((current) => {
-        if (current >= terminalContent.length) {
+        if (current >= maxCharacters) {
           window.clearInterval(interval);
           return current;
         }
@@ -32,9 +52,7 @@ const HeroTerminal = () => {
     }, 20);
 
     return () => window.clearInterval(interval);
-  }, []);
-
-  const visibleContent = terminalContent.slice(0, visibleCharacters);
+  }, [maxCharacters]);
 
   return (
     <div className="min-w-0 overflow-hidden rounded-2xl border border-border bg-black/40">
@@ -45,8 +63,15 @@ const HeroTerminal = () => {
       </div>
 
       <div className="overflow-x-auto p-6">
-        <pre className="min-h-63 whitespace-pre font-mono text-sm leading-7 text-muted">
-          {visibleContent}
+        {/* Mobile */}
+        <pre className="min-h-[364px] whitespace-pre font-mono text-sm leading-7 text-muted md:hidden">
+          {mobileContent.slice(0, visibleCharacters)}
+          <span className="terminal-cursor ml-1 inline-block">█</span>
+        </pre>
+
+        {/* Desktop */}
+        <pre className="hidden min-h-[252px] whitespace-pre font-mono text-sm leading-7 text-muted md:block">
+          {desktopContent.slice(0, visibleCharacters)}
           <span className="terminal-cursor ml-1 inline-block">█</span>
         </pre>
       </div>
