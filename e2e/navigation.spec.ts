@@ -60,3 +60,17 @@ test.describe("Back to top navigation", () => {
     await expect(page).toHaveURL(/\/en$/);
   });
 });
+
+test("preserves the section hash when changing locale", async ({ page }) => {
+  await page.goto("/es#projects");
+
+  await expect(page).toHaveURL(/\/es#projects$/);
+
+  await page.getByRole("button", { name: "EN", exact: true }).click();
+
+  await expect(page).toHaveURL(/\/en#projects$/);
+
+  await page.getByRole("button", { name: "ES", exact: true }).click();
+
+  await expect(page).toHaveURL(/\/es#projects$/);
+});
