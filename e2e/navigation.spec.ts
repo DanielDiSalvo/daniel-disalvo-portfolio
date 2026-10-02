@@ -104,3 +104,28 @@ test.describe("CV download", () => {
     );
   });
 });
+
+test.describe("Home navigation", () => {
+  test("clears the section hash when navigating home", async ({ page }) => {
+    await page.goto("/es#projects");
+
+    await expect(page).toHaveURL(/\/es#projects$/);
+
+    await page.locator('header a[href="/es"]').click();
+
+    await expect(page).toHaveURL(/\/es$/);
+  });
+});
+
+test.describe("Portfolio smoke test", () => {
+  test("renders the main portfolio sections", async ({ page }) => {
+    await page.goto("/en");
+
+    await expect(page.locator("#about")).toBeVisible();
+    await expect(page.locator("#experience")).toBeVisible();
+    await expect(page.locator("#projects")).toBeVisible();
+    await expect(page.locator("#stack")).toBeVisible();
+    await expect(page.locator("#teaching")).toBeVisible();
+    await expect(page.locator("#contact")).toBeVisible();
+  });
+});
