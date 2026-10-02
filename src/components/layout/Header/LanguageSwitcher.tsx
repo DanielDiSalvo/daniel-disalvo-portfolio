@@ -25,14 +25,14 @@ const LanguageSwitcher = () => {
 
   return (
     <div
-      className="hidden items-center gap-1 rounded-full border border-border p-1 text-xs md:flex"
+      className="flex items-center gap-0.5 rounded-full border border-border p-0.5 text-[10px] md:gap-1 md:p-1 md:text-xs"
       aria-label={t("languageSelector")}
     >
       <button
         type="button"
         onClick={() => changeLocale("en")}
         aria-pressed={locale === "en"}
-        className={`rounded-full px-3 py-1 transition-colors ${
+        className={`rounded-full px-2 py-1 md:px-3 md:py-1.5 transition-colors ${
           locale === "en"
             ? "bg-foreground text-background"
             : "text-muted hover:text-foreground"
