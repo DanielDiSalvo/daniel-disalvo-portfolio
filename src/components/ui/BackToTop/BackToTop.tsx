@@ -21,6 +21,12 @@ const BackToTop = () => {
   }, []);
 
   const scrollToTop = () => {
+    window.history.replaceState(
+      null,
+      "",
+      window.location.pathname + window.location.search,
+    );
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
