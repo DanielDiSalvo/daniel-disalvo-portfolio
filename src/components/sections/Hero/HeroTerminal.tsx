@@ -64,13 +64,13 @@ const HeroTerminal = () => {
 
       <div className="overflow-x-auto p-6">
         {/* Mobile */}
-        <pre className="min-h-[364px] whitespace-pre font-mono text-sm leading-7 text-muted md:hidden">
+        <pre className="min-h-91 whitespace-pre font-mono text-sm leading-7 text-muted md:hidden">
           {mobileContent.slice(0, visibleCharacters)}
           <span className="terminal-cursor ml-1 inline-block">█</span>
         </pre>
 
         {/* Desktop */}
-        <pre className="hidden min-h-[252px] whitespace-pre font-mono text-sm leading-7 text-muted md:block">
+        <pre className="hidden min-h-63 whitespace-pre font-mono text-sm leading-7 text-muted md:block">
           {desktopContent.slice(0, visibleCharacters)}
           <span className="terminal-cursor ml-1 inline-block">█</span>
         </pre>
