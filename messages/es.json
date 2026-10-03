@@ -110,7 +110,7 @@
     "items": {
       "cda": {
         "role": "Software Engineer",
-        "period": "2026 — ACTUALIDAD",
+        "period": "Ago 2026 — ACTUALIDAD",
         "description": "Desarrollo de aplicaciones mobile y servicios backend para un entorno de servicios financieros a gran escala.",
         "highlights": [
           "Desarrollo mobile multiplataforma",
@@ -120,7 +120,7 @@
       },
       "globallogic": {
         "role": "Senior Software Engineer",
-        "period": "2020 — 2026",
+       "period": "Oct 2020 — Jun 2026",
         "description": "Desarrollo y mantenimiento de productos web y mobile para grandes clientes internacionales de medios, telecomunicaciones y plataformas digitales.",
         "highlights": [
           "Arquitecturas reutilizables para frontend y mobile",
@@ -140,7 +140,7 @@
       },
       "coderhouse": {
         "role": "Profesor de Programación",
-        "period": "2020 — ACTUALIDAD",
+        "period": "Feb 2021 — Actualidad",
         "description": "Enseñanza de desarrollo frontend y mentoría de estudiantes a través de proyectos prácticos de desarrollo de software.",
         "highlights": [
           "Enseñanza de desarrollo frontend",
