@@ -54,7 +54,7 @@ const MobileMenu = () => {
                   key={href}
                   href={href}
                   onClick={closeMenu}
-                  className="border-b border-border py-4 text-sm text-muted transition-colors last:border-b-0 hover:text-foreground"
+                  className="border-l-2 border-transparent px-4 py-5 text-muted transition-all duration-200 hover:border-accent hover:bg-white/[0.04] hover:text-foreground active:border-accent active:bg-white/[0.06] active:text-foreground focus-visible:border-accent focus-visible:bg-white/[0.04] focus-visible:text-foreground focus-visible:outline-none"
                 >
                   {t(`navigation.${key}`)}
                 </a>
