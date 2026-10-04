@@ -18,7 +18,7 @@ const ProjectCard = async ({ project, index }: ProjectCardProps) => {
           {String(index + 1).padStart(2, "0")}
         </span>
 
-        <ProjectStatus status={status} />
+        <ProjectStatus label={t(`status.${status}`)} />
       </div>
 
       <p className="mt-10 text-xs font-medium tracking-[0.18em] text-muted">
