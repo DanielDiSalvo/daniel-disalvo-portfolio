@@ -1,22 +1,11 @@
-import type { ProjectStatus as ProjectStatusType } from "@/components/sections/SelectedProjects/types";
-import { getTranslations } from "next-intl/server";
-
 type ProjectStatusProps = {
-  status: ProjectStatusType;
+  label: string;
 };
 
-const statusLabels: Record<ProjectStatusType, string> = {
-  planned: "Planned",
-  "in-progress": "In progress",
-  completed: "Completed",
-};
-
-const ProjectStatus = async ({ status }: ProjectStatusProps) => {
-  const t = await getTranslations("Projects.status");
-
+const ProjectStatus = ({ label }: ProjectStatusProps) => {
   return (
     <span className="rounded-full border border-border px-3 py-1 text-xs text-muted">
-      {t(status)}
+      {label}
     </span>
   );
 };

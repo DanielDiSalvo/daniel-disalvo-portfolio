@@ -17,18 +17,18 @@ type Story = StoryObj<typeof meta>;
 
 export const Planned: Story = {
   args: {
-    status: "planned",
+    label: "Planned",
   },
 };
 
 export const InProgress: Story = {
   args: {
-    status: "in-progress",
+    label: "In progress",
   },
 };
 
 export const Completed: Story = {
   args: {
-    status: "completed",
+    label: "Completed",
   },
 };
