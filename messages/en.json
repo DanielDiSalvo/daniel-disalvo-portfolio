@@ -199,5 +199,9 @@
   },
   "BackToTop": {
     "label": "Back to top"
+  },
+  "Metadata": {
+    "title": "Daniel Di Salvo | Senior Frontend Engineer",
+    "description": "Senior Frontend Engineer specializing in React, Next.js, React Native and TypeScript, building scalable web and mobile products."
   }
 }
