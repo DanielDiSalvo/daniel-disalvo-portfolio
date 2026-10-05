@@ -26,9 +26,19 @@ export const generateMetadata = async ({
     namespace: "Metadata",
   });
 
+  const title = t("title");
+  const description = t("description");
+
   return {
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "website",
+      locale: locale === "es" ? "es_AR" : "en_US",
+      siteName: "Daniel Di Salvo",
+    },
   };
 };
 
