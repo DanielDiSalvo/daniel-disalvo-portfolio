@@ -199,5 +199,9 @@
   },
   "BackToTop": {
     "label": "Volver arriba"
-  }
+  },
+  "Metadata": {
+  "title": "Daniel Di Salvo | Senior Frontend Engineer",
+  "description": "Senior Frontend Engineer especializado en React, Next.js, React Native y TypeScript, desarrollando productos web y mobile escalables."
+}
 }
