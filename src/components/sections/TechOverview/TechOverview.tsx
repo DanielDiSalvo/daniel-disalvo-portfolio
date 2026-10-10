@@ -28,12 +28,13 @@ const TechOverview = async () => {
           </p>
 
           <div className="flex flex-wrap gap-x-8 gap-y-4">
-            {technologies.map((technology) => (
+            {technologies.map(({ name, icon: Icon }) => (
               <span
-                key={technology}
-                className="text-sm font-medium text-muted transition-colors hover:text-foreground"
+                key={name}
+                className="flex items-center gap-2 text-sm font-medium text-muted transition-colors hover:text-foreground"
               >
-                {technology}
+                <Icon size={18} aria-hidden="true" />
+                {name}
               </span>
             ))}
           </div>

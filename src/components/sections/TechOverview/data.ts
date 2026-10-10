@@ -1,3 +1,11 @@
+import {
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+
 export const stats = [
   {
     key: "software",
@@ -18,10 +26,28 @@ export const stats = [
 ] as const;
 
 export const technologies = [
-  "React",
-  "React Native",
-  "Next.js",
-  "TypeScript",
-  "Tailwind CSS",
-  "Node.js",
-];
+  {
+    name: "React",
+    icon: SiReact,
+  },
+  {
+    name: "React Native",
+    icon: SiReact,
+  },
+  {
+    name: "Next.js",
+    icon: SiNextdotjs,
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: SiTailwindcss,
+  },
+  {
+    name: "Node.js",
+    icon: SiNodedotjs,
+  },
+] as const;

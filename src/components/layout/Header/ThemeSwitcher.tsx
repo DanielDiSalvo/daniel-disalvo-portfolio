@@ -3,19 +3,19 @@
 import { useEffect, useState } from "react";
 
 const ThemeSwitcher = () => {
-  const [isLight, setIsLight] = useState(false);
+  const [isLight, setIsLight] = useState(() => {
+    if (typeof window === "undefined") {
+      return false;
+    }
+
+    return localStorage.getItem("theme") === "light";
+  });
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-
-    if (savedTheme === "light") {
-      document.documentElement.dataset.theme = "light";
-      setIsLight(true);
-    }
-  }, []);
+    document.documentElement.dataset.theme = isLight ? "light" : "dark";
+  }, [isLight]);
 
   const changeTheme = (theme: "light" | "dark") => {
-    document.documentElement.dataset.theme = theme;
     localStorage.setItem("theme", theme);
     setIsLight(theme === "light");
   };
