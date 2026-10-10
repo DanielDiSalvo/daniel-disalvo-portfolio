@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
-
+import ThemeSwitcher from "./ThemeSwitcher";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
 import { navigation } from "./data";
@@ -45,6 +45,7 @@ const Header = async () => {
 
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
+          <ThemeSwitcher />
           <MobileMenu />
         </div>
       </div>

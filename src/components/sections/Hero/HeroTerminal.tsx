@@ -55,13 +55,12 @@ const HeroTerminal = () => {
   }, [maxCharacters]);
 
   return (
-    <div className="min-w-0 overflow-hidden rounded-2xl border border-border bg-black/40">
+    <div className="min-w-0 overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950">
       <div className="flex items-center gap-2 border-b border-border px-4 py-3">
         <span className="h-3 w-3 rounded-full bg-red-500" />
         <span className="h-3 w-3 rounded-full bg-yellow-500" />
         <span className="h-3 w-3 rounded-full bg-green-500" />
       </div>
-
       <div className="overflow-x-auto p-6">
         {/* Mobile */}
         <pre className="min-h-91 whitespace-pre font-mono text-sm leading-7 text-muted md:hidden">
