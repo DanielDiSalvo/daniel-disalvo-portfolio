@@ -8,6 +8,14 @@
   --accent: #6265ee;
 }
 
+[data-theme="light"] {
+  --background: #fafafa;
+  --foreground: #18181b;
+  --muted: #71717a;
+  --border: #e4e4e7;
+  --accent: #6265ee;
+}
+
 /* Tailwind CSS v4 theme directive; CSS linters may not recognize this at-rule. */
 @theme inline {
   --color-background: var(--background);
