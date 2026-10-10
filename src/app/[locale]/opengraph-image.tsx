@@ -52,7 +52,6 @@ const OpenGraphImage = async ({ params }: Props) => {
       }}
     >
       {/* Imagen decorativa de fondo */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={backgroundDataUrl}
         alt=""
