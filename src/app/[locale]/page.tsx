@@ -8,20 +8,32 @@ import Teaching from "@/components/sections/Teaching/Teaching";
 import Contact from "@/components/sections/Contact/Contact";
 import Footer from "@/components/layout/Footer/Footer";
 import BackToTop from "@/components/ui/BackToTop/BackToTop";
+import Reveal from "@/components/ui/Reveal/Reveal";
 
 export default function Home() {
   return (
     <>
       <Header />
-
       <main>
         <Hero />
-        <TechOverview />
-        <About />
-        <SelectedProjects />
-        <Experience />
-        <Teaching />
-        <Contact />
+        <Reveal>
+          <TechOverview />
+        </Reveal>
+        <Reveal>
+          <About />
+        </Reveal>
+        <Reveal>
+          <SelectedProjects />
+        </Reveal>
+        <Reveal>
+          <Experience />
+        </Reveal>
+        <Reveal>
+          <Teaching />
+        </Reveal>
+        <Reveal>
+          <Contact />
+        </Reveal>
       </main>
       <Footer />
       <BackToTop />

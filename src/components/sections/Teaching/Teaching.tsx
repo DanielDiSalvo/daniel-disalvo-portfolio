@@ -6,7 +6,7 @@ const Teaching = async () => {
 
   return (
     <section id="teaching" className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 py-20 lg:py-24">
         <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="text-xs font-medium tracking-[0.18em] text-muted">
