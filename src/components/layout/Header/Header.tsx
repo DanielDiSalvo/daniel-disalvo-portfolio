@@ -10,7 +10,7 @@ const Header = async () => {
   const t = await getTranslations("Header");
 
   return (
-    <header className="relative border-b border-border">
+    <header className="sticky top-0 z-50 border-b border-border bg-background">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <a
           href={`/${locale}`}
