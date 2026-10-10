@@ -6,7 +6,7 @@ const Contact = async () => {
 
   return (
     <section id="contact" className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 py-20 lg:py-24">
         <p className="text-xs font-medium tracking-[0.18em] text-muted">
           {t("label")}
         </p>
