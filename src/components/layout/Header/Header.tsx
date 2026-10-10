@@ -17,7 +17,7 @@ const Header = async () => {
           className="flex items-center gap-3 font-semibold"
         >
           <Image
-            src="/daniel-di-salvo.jpg"
+            src="/images/daniel-di-salvo.jpg"
             alt="Daniel Di Salvo"
             width={40}
             height={40}
