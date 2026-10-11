@@ -1,5 +1,6 @@
 import { contactLinks } from "./data";
 import { getTranslations } from "next-intl/server";
+import ContactForm from "./ContactForm";
 
 const Contact = async () => {
   const t = await getTranslations("Contact");
@@ -49,6 +50,20 @@ const Contact = async () => {
               </a>
             ))}
           </div>
+        </div>
+
+        <div className="mt-16 border-t border-border pt-12">
+          <div className="mb-12 max-w-xl">
+            <h3 className="text-2xl font-semibold tracking-tight md:text-3xl">
+              {t("directMessage.title")}
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-muted md:text-base">
+              {t("directMessage.description")}
+            </p>
+          </div>
+
+          <ContactForm />
         </div>
       </div>
     </section>

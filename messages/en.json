@@ -172,18 +172,28 @@
       }
     }
   },
-  "Contact": {
-    "label": "CONTACT",
-    "title": "Have a project",
-    "titleSecondLine": "in mind?",
-    "titleAccent": "Let's build it.",
-    "description": "I'm always open to discussing interesting products, engineering challenges and opportunities to build great software.",
-    "links": {
-      "email": "Email",
-      "linkedin": "LinkedIn",
-      "github": "GitHub"
-    }
+"Contact": {
+  "label": "CONTACT",
+  "title": "Have a project",
+  "titleSecondLine": "in mind?",
+  "titleAccent": "Let's build it.",
+  "description": "I'm always open to discussing interesting products, engineering challenges and opportunities to build great software.",
+  "directMessage": {
+    "title": "Send me a message",
+    "description": "Prefer to get in touch directly? Leave me a message and I'll get back to you."
   },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send message"
+  },
+  "links": {
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+},
   "TechOverview": {
     "label": "TECH STACK",
     "stats": {
