@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 
 const desktopTerminalLines = [
-  "danieldisalvo@MacBook-Pro-de-Daniel ~ %",
+  "danieldisalvo@Daniels-MacBook-Pro ~ %",
+
   "const dany = {",
   '  role: "Senior Frontend Engineer",',
   '  stack: ["React", "React Native", "Next.js", "TypeScript"],',
@@ -11,11 +12,13 @@ const desktopTerminalLines = [
   '  passion: "Teaching & building",',
   '  location: "Argentina",',
   "};",
+
   "// Always learning...",
 ];
 
 const mobileTerminalLines = [
-  "danieldisalvo@MacBook-Pro-de-Daniel ~ %",
+  "danieldisalvo@Daniels-MacBook-Pro ~ %",
+
   "const dany = {",
   '  role: "Senior Frontend Engineer",',
   "  stack: [",
@@ -28,6 +31,7 @@ const mobileTerminalLines = [
   '  passion: "Teaching & building",',
   '  location: "Argentina",',
   "};",
+
   "// Always learning...",
 ];
 
@@ -63,7 +67,7 @@ const HeroTerminal = () => {
       </div>
       <div className="overflow-x-auto p-6">
         {/* Mobile */}
-        <pre className="min-h-91 whitespace-pre font-mono text-sm leading-7 text-muted md:hidden">
+        <pre className="min-h-98 whitespace-pre font-mono text-sm leading-7 text-muted md:hidden">
           {mobileContent.slice(0, visibleCharacters)}
           <span className="terminal-cursor ml-1 inline-block">█</span>
         </pre>
