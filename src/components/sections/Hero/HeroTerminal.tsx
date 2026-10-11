@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 const desktopTerminalLines = [
+  "danieldisalvo@MacBook-Pro-de-Daniel ~ %",
   "const dany = {",
   '  role: "Senior Frontend Engineer",',
   '  stack: ["React", "React Native", "Next.js", "TypeScript"],',
@@ -10,11 +11,11 @@ const desktopTerminalLines = [
   '  passion: "Teaching & building",',
   '  location: "Argentina",',
   "};",
-  "",
   "// Always learning...",
 ];
 
 const mobileTerminalLines = [
+  "danieldisalvo@MacBook-Pro-de-Daniel ~ %",
   "const dany = {",
   '  role: "Senior Frontend Engineer",',
   "  stack: [",
@@ -27,7 +28,6 @@ const mobileTerminalLines = [
   '  passion: "Teaching & building",',
   '  location: "Argentina",',
   "};",
-  "",
   "// Always learning...",
 ];
 
