@@ -172,18 +172,28 @@
       }
     }
   },
-  "Contact": {
-    "label": "CONTACTO",
-    "title": "¿Tenés un proyecto",
-    "titleSecondLine": "en mente?",
-    "titleAccent": "Construyámoslo.",
-    "description": "Siempre estoy abierto a conversar sobre productos interesantes, desafíos de ingeniería y oportunidades para construir gran software.",
-    "links": {
-      "email": "Email",
-      "linkedin": "LinkedIn",
-      "github": "GitHub"
-    }
+"Contact": {
+  "label": "CONTACTO",
+  "title": "¿Tenés un proyecto",
+  "titleSecondLine": "en mente?",
+  "titleAccent": "Construyámoslo.",
+  "description": "Siempre estoy abierto a conversar sobre productos interesantes, desafíos de ingeniería y oportunidades para construir gran software.",
+  "directMessage": {
+    "title": "Enviame un mensaje",
+    "description": "¿Preferís contactarme directamente? Dejame un mensaje y te respondo."
   },
+  "form": {
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "submit": "Enviar mensaje"
+  },
+  "links": {
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+},
   "TechOverview": {
     "label": "TECNOLOGÍAS",
     "stats": {
