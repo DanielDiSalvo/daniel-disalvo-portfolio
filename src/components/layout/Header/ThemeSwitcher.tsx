@@ -1,15 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Sun, Moon } from "lucide-react";
 
 const ThemeSwitcher = () => {
-  const [isLight, setIsLight] = useState(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
+  const [isLight, setIsLight] = useState(false);
 
-    return localStorage.getItem("theme") === "light";
-  });
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    const initialTheme = savedTheme === "light" ? "light" : "dark";
+
+    setIsLight(initialTheme === "light");
+    document.documentElement.dataset.theme = initialTheme;
+  }, []);
 
   useEffect(() => {
     document.documentElement.dataset.theme = isLight ? "light" : "dark";
@@ -28,6 +31,7 @@ const ThemeSwitcher = () => {
       <button
         type="button"
         onClick={() => changeTheme("light")}
+        aria-label="Activar tema claro"
         aria-pressed={isLight}
         className={`rounded-full px-2 py-1 transition-colors md:px-3 md:py-1.5 ${
           isLight
@@ -35,12 +39,13 @@ const ThemeSwitcher = () => {
             : "text-muted hover:text-foreground"
         }`}
       >
-        ☀
+        <Sun className="h-5 w-5" aria-hidden="true" />
       </button>
 
       <button
         type="button"
         onClick={() => changeTheme("dark")}
+        aria-label="Activar tema oscuro"
         aria-pressed={!isLight}
         className={`rounded-full px-2 py-1 transition-colors md:px-3 md:py-1.5 ${
           !isLight
@@ -48,7 +53,7 @@ const ThemeSwitcher = () => {
             : "text-muted hover:text-foreground"
         }`}
       >
-        ☾
+        <Moon className="h-5 w-5" aria-hidden="true" />
       </button>
     </div>
   );
