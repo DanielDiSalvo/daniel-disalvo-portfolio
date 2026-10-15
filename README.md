@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daniel Di Salvo — Personal Portfolio
+
+A modern, bilingual portfolio built to showcase my experience as a **Senior Frontend Engineer**, my technical background, and the projects I'm working on.
+
+Designed and developed with a focus on performance, accessibility, responsive design, and clean, maintainable code.
+
+### Live Demo
+
+**[Visit my portfolio](https://daniel-disalvo-portfolio.vercel.app/en)**
+
+Available in [English](https://daniel-disalvo-portfolio.vercel.app/en) and [Spanish](https://daniel-disalvo-portfolio.vercel.app/es).
+
+## Features
+
+- **Responsive design** — Optimized for desktop, tablet, and mobile devices.
+- **Internationalization** — English and Spanish support using next-intl.
+- **Light and dark themes** — Theme switching with persistent preferences.
+- **Interactive UI** — Subtle animations and terminal-inspired elements.
+- **Professional overview** — Experience, technical skills, teaching background, and selected projects.
+- **SEO optimization** — Localized metadata, Open Graph images, sitemap, and robots.txt.
+- **Accessibility** — Semantic markup and accessible UI controls.
+
+## Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| UI | React 19 |
+| Language | TypeScript |
+| Styling | Tailwind CSS 4 |
+| Internationalization | next-intl |
+| Icons | Lucide React, React Icons |
+| Animations | Motion |
+| Component development | Storybook |
+| Testing | Vitest, Playwright |
+| CI/CD | GitHub Actions, Vercel |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 22
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/DanielDiSalvo/daniel-disalvo-portfolio.git
+cd daniel-disalvo-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+For deployment, configure the following environment variable:
 
-## Learn More
+```env
+NEXT_PUBLIC_SITE_URL=https://your-domain.com
+```
 
-To learn more about Next.js, take a look at the following resources:
+This is used to generate absolute URLs for SEO metadata and the sitemap.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development & Testing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run dev          # Start development server
+npm run build        # Create production build
+npm run lint         # Run ESLint
+npm run test         # Run Vitest tests
+npm run test:e2e     # Run Playwright tests
+npm run storybook    # Launch Storybook
+```
 
-## Deploy on Vercel
+GitHub Actions runs linting, unit tests, and the production build on pushes and pull requests to `main`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The portfolio is deployed on **Vercel**, with deployments connected to the GitHub repository.
+
+**Production:** https://daniel-disalvo-portfolio.vercel.app
+
+## About Me
+
+I'm Daniel Di Salvo, a software engineer specializing in React, Next.js, React Native, and TypeScript, with experience building web and mobile applications.
+
+I'm also a programming instructor, passionate about sharing knowledge and helping other developers grow.
+
+## Contact
+
+- **Portfolio:** [daniel-disalvo-portfolio.vercel.app](https://daniel-disalvo-portfolio.vercel.app/en)
+- **GitHub:** [@DanielDiSalvo](https://github.com/DanielDiSalvo)
+
+---
+
+Built with Next.js, React, and TypeScript by **Daniel Di Salvo**.
